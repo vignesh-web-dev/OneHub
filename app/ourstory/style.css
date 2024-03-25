@@ -1,0 +1,99 @@
+#ourstoryImage {
+  width: 100% !important;
+  height: auto !important;
+}
+#Big-Ass-Leaf,
+#Big-Ass-Leaf_2,
+#Big-Ass-Leaf_3 {
+  animation: leftandright 3s linear infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#Hand {
+  animation: clock 3s linear infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+/* #SKIN_6 {
+  animation: hand 2s linear infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+} */
+#Thi-Succs_2,
+#Thi-Succs_4,
+#Thi-Succs_6,
+#Thi-Succs_8 {
+  animation: leaves 2s linear infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#Thi-Succs,
+#Thi-Succs_3,
+#Thi-Succs_5,
+#Thi-Succs_7 {
+  animation: leaves2 2s linear infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+  animation-delay: 1s;
+}
+#Head_3,
+#Hair_3 {
+  animation: hand2 3s linear infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes leaves {
+  0% {
+    transform: rotateZ(-2deg);
+  }
+  50% {
+    transform: rotateZ(6deg);
+  }
+  100% {
+    transform: rotateZ(-2deg);
+  }
+}
+@keyframes leaves2 {
+  0% {
+    transform: rotateZ(-4deg);
+  }
+  50% {
+    transform: rotateZ(6deg);
+  }
+  100% {
+    transform: rotateZ(-4deg);
+  }
+}
+@keyframes hand2 {
+  0% {
+    transform: rotateZ(-2deg);
+  }
+  50% {
+    transform: rotateZ(4deg);
+  }
+  100% {
+    transform: rotateZ(-2deg);
+  }
+}
+
+@keyframes clock {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes leftandright {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(20deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}

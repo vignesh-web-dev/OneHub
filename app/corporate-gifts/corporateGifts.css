@@ -1,0 +1,89 @@
+.active ~ div {
+  display: flex !important;
+  align-items: flex-start;
+}
+.active > div > img {
+  transform: rotateX(180deg);
+}
+.dropdown > img {
+  transition: all 0.5s linear;
+}
+.accordion-content {
+  animation: slideDown 0.3s ease-out;
+}
+
+/* Animation keyframes */
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.ohline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  height: 60px;
+  width: 400%;
+  transform: translateX(-100%);
+  opacity: 1;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjMxLjc4MSIgdmlld0JveD0iMCAwIDEyMDAgMzEuNzgxIj4NCiAgPHBhdGggaWQ9ImRvd25sb2FkIiBkPSJNMCw3Ni43ODFIMzk5LjMzM0M0NDguMzM2LDc2Ljc4MSw1MTMuOTk0LDQ2LDU5Nyw0NmM3Ny4zMjcsMCwxMzUsMzAuNzgxLDIwMSwzMC43ODFoNDAyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIC00NS41KSIgZmlsbD0icmdiYSgwLDAsMCwwKSIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjEiLz4NCjwvc3ZnPg0K);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  pointer-events: none;
+  touch-action: none;
+  transition: transform 0s cubic-bezier(0, 0.25, 0.5, 1), opacity 0.4s;
+}
+
+.line-box input:focus + .ohline {
+  transform: translateX(0);
+  opacity: 1;
+  transform-origin: bottom left;
+  transition: transform 1.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+label {
+  cursor: pointer;
+}
+
+.MuiPagination-root {
+  display: flex;
+  justify-content: center;
+}
+.MuiPagination-ul {
+  gap: 15px;
+}
+.MuiPaginationItem-root.Mui-selected {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+.MuiButtonBase-root {
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 40px !important;
+  width: 40px !important;
+  aspect-ratio: 1/1;
+  min-width: fit-content !important;
+  font-size: 1.5rem !important;
+  font-family: "lato", sans-serif !important;
+  color: #000000 !important;
+  border-radius: 50px !important;
+  -webkit-border-radius: 50px !important; /* Safari/Chrome */
+  -moz-border-radius: 50px !important; /* Firefox */
+  -ms-border-radius: 50px !important; /* Internet Explorer */
+  outline: #000000 2px solid !important;
+  font-weight: 400;
+}
+
+.activeFilter {
+  color: #f7bd58;
+}
+.activeFilter + .filterClearButton {
+  display: block !important;
+}

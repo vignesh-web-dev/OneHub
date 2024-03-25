@@ -1,0 +1,9 @@
+.imageActive {
+  border: 2px #fff solid;
+}
+.colorDiv {
+  background: linear-gradient(270deg, #e0e0e0 0.7%, #3e3e3e 99.32%);
+}
+.colorDiv.colorActive {
+  background: #fff;
+}

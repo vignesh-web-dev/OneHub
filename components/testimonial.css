@@ -1,0 +1,30 @@
+.testimonial .swiper-pagination {
+  position: relative !important;
+  bottom: 0px !important; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+}
+.swiper-autoheight .swiper-wrapper {
+  min-height: 200px;
+  height: 100% !important;
+  align-items: stretch !important;
+}
+.testimonial .swiper-pagination .swiper-pagination-bullet-active {
+  width: 15px !important;
+  height: 15px !important;
+  background-color: #ffffff !important;
+}
+.testimonial .swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  background: #0000006b !important;
+  opacity: unset !important;
+}
+
+.testimonial .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

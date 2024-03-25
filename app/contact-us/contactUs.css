@@ -1,0 +1,89 @@
+#contactUsImage {
+  width: 100% !important;
+  height: auto !important;
+}
+#Hand {
+  animation: clock 3s linear infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes clock {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+#Vector_19,
+#Vector_22 {
+  animation: inandout 3s linear infinite;
+  transform-origin: left;
+  transform-box: fill-box;
+}
+@keyframes inandout {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+#Vector_20,
+#Vector_23 {
+  animation: inandout2 4s linear infinite;
+  transform-origin: left;
+  transform-box: fill-box;
+}
+@keyframes inandout2 {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+#Vector_21 {
+  animation: inandout3 2s linear infinite;
+  transform-origin: left;
+  transform-box: fill-box;
+}
+@keyframes inandout3 {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+#Vector_34,
+#Vector_33 {
+  animation: handraise 3s linear infinite;
+  transform-origin: right;
+  transform-box: fill-box;
+}
+@keyframes handraise {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(15deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.hubspot-form {
+  width: 100%;
+}

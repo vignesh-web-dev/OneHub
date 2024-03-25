@@ -1,0 +1,106 @@
+.subList {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.innerList {
+  cursor: pointer;
+}
+.svg-checkbox,
+.svg-checkboxList {
+  display: list-item;
+  position: relative;
+  list-style: none;
+}
+
+.svg-checkbox input[type="checkbox"],
+.svg-checkboxList input[type="checkbox"] {
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0;
+}
+
+.svg-checkbox input[type="checkbox"],
+.svg-checkbox .innerList::before {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* outerList */
+
+.svg-checkboxList input[type="checkbox"],
+.svg-checkboxList .outerList::before {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.svg-checkbox .innerList {
+  display: inline-block;
+  position: relative;
+  padding: 0 0 0 30px;
+}
+
+.svg-checkboxList .outerList {
+  display: inline-block;
+  position: relative;
+  padding: 0 0 0 30px;
+}
+
+.svg-checkbox .innerList::before,
+.svg-checkboxList .outerList::before {
+  content: "";
+  border: 2px solid #000000;
+  background-color: transparent;
+  /* opacity: 0.7; */
+  /* transition: opacity 0.3s; */
+  border-radius: 5px;
+}
+
+.svg-checkbox input[type="checkbox"]:checked + .innerList::before,
+.svg-checkboxList input[type="checkbox"]:checked + .outerList::before {
+  opacity: 1;
+}
+
+.svg-checkbox svg {
+  position: absolute;
+  top: 20%;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+}
+.svg-checkboxList svg {
+  position: absolute;
+  top: 20%;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+}
+
+.svg-checkbox svg path,
+.svg-checkboxList svg path {
+  stroke-width: 12px;
+  fill: none;
+  transition: stroke-dashoffset 0.2s ease-in 0s;
+}
+
+.svg-checkbox svg path + path,
+.svg-checkboxList svg path + path {
+  transition: stroke-dashoffset 0.2s ease-out 0.2s;
+}
+
+.svg-checkbox input[type="checkbox"]:checked ~ svg path {
+  stroke-dashoffset: 0;
+}
+.svg-checkboxList input[type="checkbox"]:checked ~ svg path {
+  stroke-dashoffset: 0;
+}
